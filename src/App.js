@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 import WeatherCard from './components/WeatherCard';
@@ -15,11 +15,7 @@ function App() {
   const ONECALL_API_URL_3 = 'https://api.openweathermap.org/data/3.0/onecall';
   const ONECALL_API_URL_25 = 'https://api.openweathermap.org/data/2.5/onecall';
 
-  useEffect(() => {
-    fetchWeatherData(city);
-  }, []);
-
-  const fetchWeatherData = async (cityName) => {
+  const fetchWeatherData = useCallback(async (cityName) => {
     if (!cityName || cityName.trim() === '') {
       setError('Please enter a city name');
       return;
@@ -93,7 +89,11 @@ function App() {
       }
       setWeatherData(null);
     }
-  };
+  }, [API_KEY, API_URL, ONECALL_API_URL_3, ONECALL_API_URL_25]);
+
+  useEffect(() => {
+    fetchWeatherData(city);
+  }, [city, fetchWeatherData]);
 
   const handleSearch = (searchCity) => {
     setCity(searchCity);
