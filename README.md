@@ -31,7 +31,7 @@ A React weather application that displays real-time weather information for any 
 
 1. **Clone the repository**
    ```bash
-   git clone <your-github-repo-url>
+   git clone https://github.com/karina-vetlugina/101501883_comp3123_labtest2.git
    cd 101501883_comp3123_labtest2
    ```
 
@@ -111,5 +111,5 @@ Add screenshots to the `screenshots/` folder:
 
 ---
 
-**GitHub Repository:** [Your Repository Link Here]  
+**GitHub Repository:** [https://github.com/karina-vetlugina/101501883_comp3123_labtest2](https://github.com/karina-vetlugina/101501883_comp3123_labtest2)  
 **Live Demo:** [Your Deployment Link Here]
