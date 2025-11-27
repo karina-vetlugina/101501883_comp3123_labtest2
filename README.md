@@ -96,12 +96,13 @@ Test the API endpoint:
 
 ## Screenshots
 
-Add screenshots to the `screenshots/` folder:
-- Main weather display
-- 7-day forecast
-- Search functionality
-- Mobile responsive view
-- Error handling
+### Main Weather Display
+![Main Weather Display](screenshots/main-weather-display.png)
+*Main weather display showing current conditions for Toronto with search functionality*
+
+### 7-Day Forecast
+![7-Day Forecast](screenshots/7-day-forecast.png)
+*Weather app displaying current conditions and 7-day forecast for Toronto*
 
 ## Author
 
@@ -112,4 +113,4 @@ Add screenshots to the `screenshots/` folder:
 ---
 
 **GitHub Repository:** [https://github.com/karina-vetlugina/101501883_comp3123_labtest2](https://github.com/karina-vetlugina/101501883_comp3123_labtest2)  
-**Live Demo:** [Your Deployment Link Here]
+**Live Demo:** [https://101501883-comp3123-labtest2-xcpo.vercel.app](https://101501883-comp3123-labtest2-xcpo.vercel.app)
